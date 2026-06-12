@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Red Bridal Saree",
+    "category": "Saree",
+    "price": 1499,
+    "image": "images/saree1.jpg"
+  },
+  {
+    "name": "Silk Saree Elegant",
+    "category": "Saree",
+    "price": 1999,
+    "image": "images/saree2.jpg"
+  },
+  {
+    "name": "Casual Kurti Blue",
+    "category": "Kurti",
+    "price": 799,
+    "image": "images/kurti1.jpg"
+  },
+  {
+    "name": "Party Kurti Stylish",
+    "category": "Kurti",
+    "price": 999,
+    "image": "images/kurti2.jpg"
+  },
+  {
+    "name": "Wedding Anarkali Dress",
+    "category": "Anarkali",
+    "price": 2499,
+    "image": "images/anarkali1.jpg"
+  },
+  {
+    "name": "Modern Western Dress",
+    "category": "Western",
+    "price": 1299,
+    "image": "images/western1.jpg"
+  }
+]
