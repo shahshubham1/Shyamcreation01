@@ -6,41 +6,79 @@
 
 <title>Shyam Creation | Fashion Store</title>
 
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<!-- HEADER -->
 <header>
   <div class="logo">Shyam Creation</div>
+
+  <nav>
+    <a href="#home">Home</a>
+
+    <!-- PRODUCTS DROPDOWN -->
+    <div class="dropdown">
+      <button class="dropbtn">Products ▼</button>
+      <div class="dropdown-content">
+        <a href="#">Saree</a>
+        <a href="#">Western Dress</a>
+        <a href="#">Anarkali</a>
+        <a href="#">Corset</a>
+        <a href="#">Kurti</a>
+        <a href="#">Bridal Lehenga</a>
+        <a href="#">New Arrivals</a>
+      </div>
+    </div>
+
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
 </header>
 
-<section class="hero">
-  <div>
-    <h1>Shyam Creation</h1>
-    <p>Elegant Sarees, Kurtis & Western Wear</p>
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-text">
+    <h1>Welcome to Shyam Creation</h1>
+    <p>Elegant Sarees, Stylish Western Wear & Bridal Collections</p>
+    <a href="#products" class="btn">Explore Collection</a>
   </div>
 </section>
 
-<section class="section">
-
-  <input type="text" id="searchInput" placeholder="Search products...">
-
-  <div class="filters">
-    <button class="filter-btn">All</button>
-    <button class="filter-btn">Saree</button>
-    <button class="filter-btn">Kurti</button>
-    <button class="filter-btn">Anarkali</button>
-    <button class="filter-btn">Western</button>
-  </div>
-
-  <p>Total Products: <span id="productCount">0</span></p>
-
-  <div class="products" id="product-container"></div>
-
+<!-- ABOUT -->
+<section id="about" class="section">
+  <h2>About Us</h2>
+  <p>
+    Welcome to Shyam Creation, your trusted destination for premium women’s fashion.
+    We bring you the latest trends in Sarees, Kurtis, Anarkalis, Western wear, and Bridal Lehenga.
+    Our mission is to make every woman feel confident, elegant, and beautiful in every occasion.
+    Quality, style, and customer satisfaction are our top priorities.
+  </p>
 </section>
 
-<script src="js/app.js"></script>
+<!-- CONTACT -->
+<section id="contact" class="section contact">
+  <h2>Contact Us</h2>
+
+  <div class="contact-box">
+    <p><b>Store:</b> Shyam Creation</p>
+    <p><b>Owner:</b> Shubham Shah</p>
+    <p><b>Mobile:</b> 8660165085</p>
+    <p><b>Email:</b> shahshubham707@gmail.com</p>
+  </div>
+
+  <a class="whatsapp-btn" href="https://wa.me/918660165085" target="_blank">
+    Chat on WhatsApp
+  </a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Shyam Creation. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
