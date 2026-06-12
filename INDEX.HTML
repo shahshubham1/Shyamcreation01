@@ -1,89 +1,378 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Shyam Creation | Fashion Store</title>
+<title>Shyam Creation | Women's Fashion Store</title>
 
-<link rel="stylesheet" href="style.css">
+<meta name="description" content="Shyam Creation - Latest Sarees, Kurtis, Anarkalis and Western Wear. Order directly through WhatsApp.">
+<meta name="keywords" content="Saree, Kurti, Anarkali, Western Wear, Shyam Creation">
+<meta name="author" content="Shubham Shah">
+
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#fafafa;
+color:#333;
+}
+
+/* Header */
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:#fff;
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 2px 15px rgba(0,0,0,.08);
+z-index:1000;
+}
+
+.logo{
+font-size:30px;
+font-weight:800;
+color:#ff4081;
+}
+
+nav a{
+text-decoration:none;
+margin-left:20px;
+font-weight:500;
+color:#333;
+}
+
+nav a:hover{
+color:#ff4081;
+}
+
+/* Hero Section */
+
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+url('images/hero-banner.jpg');
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:20px;
+color:white;
+}
+
+/* IMPORTANT: removed hero text completely */
+
+/* Section */
+
+.section{
+padding:90px 8%;
+}
+
+.section-title{
+font-size:42px;
+text-align:center;
+margin-bottom:30px;
+}
+
+/* Search */
+
+.search-box{
+max-width:600px;
+margin:auto;
+margin-bottom:25px;
+}
+
+.search-box input{
+width:100%;
+padding:15px;
+border:1px solid #ddd;
+border-radius:10px;
+font-size:16px;
+}
+
+/* Filters */
+
+.filters{
+text-align:center;
+margin-bottom:25px;
+}
+
+.filter-btn{
+padding:10px 20px;
+border:none;
+background:#ff4081;
+color:white;
+border-radius:25px;
+margin:5px;
+cursor:pointer;
+font-weight:600;
+}
+
+.filter-btn:hover{
+opacity:.9;
+}
+
+/* Product Count */
+
+.product-count{
+text-align:center;
+font-weight:600;
+margin-bottom:25px;
+}
+
+/* Product Grid */
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+/* Product Card */
+
+.card{
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+}
+
+.card img{
+width:100%;
+height:350px;
+object-fit:cover;
+}
+
+.card-content{
+padding:20px;
+}
+
+.category{
+display:inline-block;
+background:#ffe4ef;
+color:#ff4081;
+padding:5px 12px;
+border-radius:20px;
+font-size:13px;
+margin-bottom:10px;
+}
+
+.card h3{
+margin:10px 0;
+}
+
+.card p{
+color:#666;
+font-size:14px;
+line-height:1.6;
+}
+
+.price{
+font-size:24px;
+font-weight:700;
+color:#ff4081;
+margin:15px 0;
+}
+
+.buy-btn{
+display:block;
+text-align:center;
+background:#25D366;
+color:white;
+text-decoration:none;
+padding:12px;
+border-radius:10px;
+font-weight:600;
+}
+
+/* About */
+
+.about{
+background:#fff5f8;
+text-align:center;
+}
+
+.about p{
+max-width:900px;
+margin:auto;
+line-height:1.9;
+}
+
+/* Contact */
+
+.contact{
+background:linear-gradient(135deg,#ff4081,#ff9800);
+color:white;
+text-align:center;
+}
+
+.contact h2{
+margin-bottom:20px;
+}
+
+.contact p{
+margin:10px 0;
+}
+
+/* Footer */
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:25px;
+}
+
+/* WhatsApp Float */
+
+.whatsapp-float{
+position:fixed;
+right:20px;
+bottom:20px;
+width:60px;
+height:60px;
+background:#25D366;
+color:white;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:28px;
+text-decoration:none;
+box-shadow:0 5px 20px rgba(0,0,0,.25);
+z-index:999;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:42px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+nav{
+display:none;
+}
+
+.section-title{
+font-size:32px;
+}
+
+}
+
+</style>
+
 </head>
 
 <body>
 
 <header>
-  <div class="logo">Shyam Creation</div>
+<div class="logo">Shyam Creation</div>
 
-  <nav>
-    <a href="#products">Products</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-  </nav>
+<nav>
+<a href="#products">Products</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</nav>
 </header>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-content">
-    <h1>SHYAM CREATION</h1>
-    <p>Elegant Sarees, Kurtis, Anarkalis & Western Wear</p>
-    <a href="#products" class="hero-btn">Shop Collection</a>
-  </div>
-</section>
+<!-- HERO (clean image only, no text) -->
+<section class="hero"></section>
 
-<!-- PRODUCTS -->
+<!-- Products -->
 <section class="section" id="products">
 
 <h2 class="section-title">Our Collection</h2>
 
-<input type="text" id="searchInput" placeholder="Search products..." class="search-box">
+<div class="search-box">
+<input type="text" id="searchInput" placeholder="Search products...">
+</div>
 
 <div class="filters">
-  <button class="filter-btn">All</button>
-  <button class="filter-btn">Saree</button>
-  <button class="filter-btn">Kurti</button>
-  <button class="filter-btn">Anarkali</button>
-  <button class="filter-btn">Western</button>
+<button class="filter-btn">All</button>
+<button class="filter-btn">Saree</button>
+<button class="filter-btn">Kurti</button>
+<button class="filter-btn">Anarkali</button>
+<button class="filter-btn">Western</button>
 </div>
 
 <div class="product-count">
-  Products: <span id="productCount">0</span>
+Products Available: <span id="productCount">0</span>
 </div>
 
 <div class="products" id="product-container"></div>
 
 </section>
 
-<!-- ABOUT -->
+<!-- About -->
 <section class="section about" id="about">
-<h2 class="section-title">About Us</h2>
+
+<h2 class="section-title">About Shyam Creation</h2>
+
 <p>
-Welcome to Shyam Creation — your trusted fashion destination.
-We bring you premium Sarees, Kurtis, Anarkalis, Western Wear & Bridal collections.
-Our mission is to make every woman feel confident, stylish, and beautiful.
+Welcome to Shyam Creation.
+We specialize in fashionable Sarees, Kurtis,
+Anarkalis and Western Wear.
+Browse our latest collection and place your order
+directly through WhatsApp.
 </p>
+
 </section>
 
-<!-- CONTACT -->
+<!-- Contact -->
 <section class="section contact" id="contact">
+
 <h2>Contact Us</h2>
 
-<p><b>Store:</b> Shyam Creation</p>
-<p><b>Owner:</b> Shubham Shah</p>
-<p><b>Phone:</b> 8660165085</p>
-<p><b>Email:</b> shahshubham707@gmail.com</p>
+<p><strong>Store:</strong> Shyam Creation</p>
+<p><strong>Owner:</strong> Shubham Shah</p>
+<p><strong>Phone:</strong> +91 8660165085</p>
 
 <a class="buy-btn" href="https://wa.me/918660165085" target="_blank">
 Chat on WhatsApp
 </a>
+
 </section>
 
-<!-- FOOTER -->
 <footer>
 <p>© 2026 Shyam Creation. All Rights Reserved.</p>
+<p>Owner: Shubham Shah</p>
 </footer>
 
-<a class="whatsapp-float" href="https://wa.me/918660165085" target="_blank">💬</a>
+<a href="https://wa.me/918660165085" class="whatsapp-float" target="_blank">
+💬
+</a>
 
 <script src="script.js"></script>
 
