@@ -1,1 +1,34 @@
-
+[
+  {
+    "id": 1,
+    "name": "Designer Saree",
+    "category": "Saree",
+    "price": 1499,
+    "image": "images/saree-01.jpg",
+    "description": "Elegant designer saree"
+  },
+  {
+    "id": 2,
+    "name": "Silk Saree",
+    "category": "Saree",
+    "price": 1999,
+    "image": "images/saree-02.jpg",
+    "description": "Premium silk saree"
+  },
+  {
+    "id": 3,
+    "name": "Printed Kurti",
+    "category": "Kurti",
+    "price": 899,
+    "image": "images/kurti-01.jpg",
+    "description": "Daily wear kurti"
+  },
+  {
+    "id": 4,
+    "name": "Cotton Kurti",
+    "category": "Kurti",
+    "price": 1099,
+    "image": "images/kurti-02.jpg",
+    "description": "Comfort cotton kurti"
+  }
+]
